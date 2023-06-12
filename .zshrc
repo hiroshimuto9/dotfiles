@@ -9,7 +9,8 @@ setopt inc_append_history   # 実行時に履歴をファイルにに追加し�
 setopt share_history        # 履歴を他のシェルとリアルタイム共有する
 
 #################################  COMPLEMENT  #################################
-# enable completion
+# enable completion and autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 autoload -Uz compinit && compinit
 
 # 補完候補をそのまま探す -> 小文字を大文字に変えて探す -> 大文字を小文字に変えて探す
